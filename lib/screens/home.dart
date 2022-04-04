@@ -132,6 +132,22 @@ class _HomeState extends State<Home> {
                               style: style.copyWith(fontSize: 20),
                             ),
                           ),
+                          const SizedBox(
+                            height: 30,
+                          ),
+                          Container(
+                            padding: const EdgeInsets.only(
+                              left: 25,
+                            ),
+                            width: getDeviceWidth(context) * 0.8,
+                            child: Text(
+                              "Uploaded time: " + data['time'],
+                              style: style.copyWith(fontSize: 20),
+                            ),
+                          ),
+                          const SizedBox(
+                            height: 20,
+                          ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceAround,
                             children: [
